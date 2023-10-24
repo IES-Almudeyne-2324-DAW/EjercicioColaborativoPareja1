@@ -16,4 +16,32 @@ public class Empleado {
         this.nombre = nombre;
     }
 
+        public void setCasado(char casado) {
+        this.casado = casado;
+    }
+
+    public void setHorasExtras(int horasExtras) {
+        this.horasExtras = horasExtras;
+    }
+
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setNumeroHijos(int numeroHijos) {
+        this.numeroHijos = numeroHijos;
+    }
+
+    public void setSueldoBase(double sueldoBase) {
+        this.sueldoBase = sueldoBase;
+    }
+
+     public double calcularImporteHorasExtras(){
+        return horasExtras * pagoPorHoraExtra;
+    }
+
 }
