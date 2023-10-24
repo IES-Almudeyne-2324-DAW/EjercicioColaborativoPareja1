@@ -44,4 +44,45 @@ public class Empleado {
         return horasExtras * pagoPorHoraExtra;
     }
 
+    public char getCasado() {
+        return casado;
+    }
+
+    public int getHorasExtras() {
+        return horasExtras;
+    }
+
+     public String getNif() {
+        return nif;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getNumeroHijos() {
+            return numeroHijos;
+        }
+
+    public double getSueldoBase() {
+        return sueldoBase;
+    }
+
+    
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nNif: ");
+        sb.append(nif);
+        sb.append("\nSueldo Base: ");
+        sb.append(sueldoBase);
+        sb.append("\nHoras Extras: ");
+        sb.append(horasExtras);
+        sb.append("\nCasado: ");
+        sb.append(casado);
+        sb.append("\nNúmero de Hijos: ");
+        sb.append(numeroHijos);
+        return  sb.toString();
+    }
+
+
 }
