@@ -7,4 +7,13 @@ public class Empleado {
     private char casado; 
     private int numeroHijos;
 
+    
+    public Empleado() {
+    }
+
+    public Empleado(String nif, String nombre) {
+        this.nif = nif;
+        this.nombre = nombre;
+    }
+
 }
