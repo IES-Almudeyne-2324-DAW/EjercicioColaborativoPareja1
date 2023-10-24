@@ -1,3 +1,4 @@
+//Clase Empleado
 public class Empleado {
    
     private String nif;
@@ -7,16 +8,18 @@ public class Empleado {
     private char casado; 
     private int numeroHijos;
 
-    
+    //Constructor por defecto
     public Empleado() {
     }
 
+    //Constructor con dos parámetros
     public Empleado(String nif, String nombre) {
         this.nif = nif;
         this.nombre = nombre;
     }
 
-        public void setCasado(char casado) {
+    //Métodos set de todos los atributos
+    public void setCasado(char casado) {
         this.casado = casado;
     }
 
@@ -40,10 +43,12 @@ public class Empleado {
         this.sueldoBase = sueldoBase;
     }
 
-     public double calcularImporteHorasExtras(){
+    //Metodo calcular el importe de las horas extra de los empleados
+    public double calcularImporteHorasExtras(){
         return horasExtras * pagoPorHoraExtra;
     }
 
+    //metodos get de todos los atributos
     public char getCasado() {
         return casado;
     }
@@ -68,7 +73,7 @@ public class Empleado {
         return sueldoBase;
     }
 
-    
+    //metodo toString para devolver informacion de los empleados
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("\nNif: ");
